@@ -1,0 +1,49 @@
+body{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(12, 12, 63);
+}
+button{
+  padding: 70px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ccc;
+  animation: live 2s ease-out infinite;
+  position: relative;
+  /* box-shadow: 0 0 0 10px rgb(249, 249, 253, 0.1), 0 0 0 20px rgb(249, 249, 253, 0.1),0 0 0 30px rgb(249, 249, 253, 0.1); */
+}
+.bx{
+  transform: scale(5);
+  color: rgb(12, 12, 63);
+  border-radius: 15px;
+}
+
+@keyframes live{
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgb(249, 249, 253, 0.1), 0 0 0 20px rgb(249, 249, 253, 0.1),0 0 0 30px rgb(249, 249, 253, 0.1);
+
+  }
+  25% {
+    transform: scale(1);
+    
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1);
+  }
+  85% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(.9);
+    box-shadow: 0 0 0 5px rgb(249, 249, 253, 0.1), 0 0 0 10px rgb(249, 249, 253, 0.1),0 0 0 15px rgb(249, 249, 253, 0.1);
+    
+  }
+}
